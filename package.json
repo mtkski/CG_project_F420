@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "convex-minkowski-sum": "^1.0.0"
+  }
+}

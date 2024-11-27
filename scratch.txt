@@ -1,0 +1,28 @@
+The project will explore "Between shapes, using the 
+Hausdorff distance," [22] 
+focusing on understanding and implementing the concept 
+of interpolating shapes 
+using Hausdorff distance as a metric. Hausdorff distance
+ measures how far two subsets of a 
+metric space are from each other, making it useful for 
+comparing shapes 
+in computational geometry. 
+The article addresses a specific problem : given
+ two shapes A and B with a
+Hausdorff distance of 1, 
+there exists a shape S that lies halfway in terms of 
+this distance, at 0.5, from both A and B. This 
+project will delve into the algorith- mic
+ approach to finding this intermediary 
+shape and investigate 
+its characteristics based on the properties (such 
+as convexity or connectedness) of A and B. 
+Additionally, I will explore the genera- lization 
+of this approach to interpolate between 
+multiple shapes, 
+offering insights into the concept of a "Hausdorff 
+middle" for more than two input sets. 
+This study aims to 
+illustrate the application of Hausdorff distance 
+in shape interpolation and to visualize 
+the results through computational models.

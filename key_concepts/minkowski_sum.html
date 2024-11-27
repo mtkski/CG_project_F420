@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>Key concepts</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../styles.css" />
+</head>
+<body>
+<div id="container">
+<div id="header"><h1><a href="../index.html">In between shapes</a></h1></div>
+  <div id="wrapper">
+    <div id="content">
+      <h1><strong>Minkowski sum</strong></h1>
+      <h2>Definition</h2>
+      <p>The minkowski sum of sets A and B is defined as A⊕︎B={a + b | a ∈ A, b ∈ B}. This looks like this : </p>
+      <img src="../images/minkowski.png" class="center" alt="Minkowski sum on two sets">
+      <p>Intuitively, I see the Minkowski sum as running a shape along another, and the "trace" left behind is the resulting set (but it's a very simplified view and the terms are not exact). </p>
+      <p><script> src="minkowski.js" </script></p>
+      
+      <h2>Algorithm</h2>
+      <p>Computing the Minkowski sum of two convex polygons P and Q, which have m and n vertices respectively, is straightforward. The result, P⊕Q, is also a convex polygon, bounded by m+n edges. These edges are sorted by their angles relative to the x-axis. Since P and Q are convex, their edges are already sorted by angle, which simplifies the process. To compute the Minkowski sum efficiently, one can start from the bottommost vertices of P and Q and merge their sorted edges, similar to the "merge" step in merge sort. This approach ensures that the Minkowski sum can be computed in O(m+n) time. </p>
+      <p>For non-convex polygons, a method is decomposition (decompose P and Q as smaller convex polygons and running the above algo pair wise) but it's very dependent on the quality of the decomposition and the nature of the shape. Another better approach is convolution.</p>
+      <p><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script></p>
+      <p><script src="minkowski.js"></script><p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
