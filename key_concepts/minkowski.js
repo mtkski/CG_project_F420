@@ -9,7 +9,6 @@ class Points {
 constructor() {
     this.list = [];
 }
-
 add(x, y) {
     this.list.push(new Point(x, y));
 
@@ -17,11 +16,9 @@ add(x, y) {
     this.list.shift();
     }
 }
-
 getPoints() {
     return this.list;
 }
-
 reset() {
     this.list = [];
 }
@@ -33,7 +30,6 @@ class Polygon {
         this.relativeCoords = []; 
         this.vertices = this.setVertices(); 
     }
-  
 
     setOrigin(origin) {
         this.origin = origin;
@@ -51,7 +47,7 @@ class Polygon {
           this.vertices[i][1] = this.relativeCoords + oy;
       this.vertices = vertices;
     }
-}
+  }
 
     getVertices() {
         return this.vertices;
@@ -74,7 +70,7 @@ class Polygon {
       }
       endShape(CLOSE);
     }
-  }
+}
 
 function minkowskiSum(shapeA, shapeB) {
     let AB_vertices = [];
